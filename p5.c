@@ -14,11 +14,11 @@ int compare(const void *a, const void *b) {
 
 int main()
 {
-        int n,sum = 0;
-        scanf("%d",&n);
-        for (int i = 1; i <= n; i++) {
+        lli n,sum = 0;
+        scanf("%lld",&n);
+        for (lli i = 1; i <= n; i++) {
             sum+=i;
         }
-        printf("%d\n",sum);
+        printf("%lld\n",sum);
     return 0;
 }
