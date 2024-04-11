@@ -10,14 +10,21 @@
 
 int main()
 {
-    int t;
+    int t,c=0;
     scanf("%d",&t);
 
-    for(int i=0;i<4;i++)
+    if(t>=3)
     {
-        printf("%d",t%10);
-        t/=10;
-    }printf("\n");
+        c+= t/3;
+        t%=3;
+    }
+    if(t>=2)
+    {
+        c+= t/2;
+        t%=2;
+    }
+    c+=t;
+    printf("%d\n",c);
 
     return 0;
 }
